@@ -1,0 +1,11 @@
+<h1>Gmail contacts</h1>
+
+<ul>
+  <% @contacts.each do |contact| %>
+    <li>
+      <b><%=contact[:name] %></b>
+      <%= contact[:email] %>
+    </li>
+    
+  <% end %>
+</ul>
